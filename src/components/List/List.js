@@ -5,11 +5,7 @@ import { useSelector } from 'react-redux';
 
 const List = () => {
 
-    const columns = useSelector(state => state.columns);
-  
-  // setColumns(columnsUpdated);
-  
-  // };
+  const columns = useSelector(state => state.columns);
 
   return (
     <div className={styles.list}>
