@@ -10,6 +10,9 @@ const reducer = (state, action) => {
     case 'ADD_CARD':
       return {...state, cards: [...state.cards, {id: nanoid(), ...action.payload}]};
       break;
+    case 'SEARCH':
+      return {...state, searchPhrase: action.payload.searchPhrase};
+      break;
     default:
       return state;
   }

@@ -5,13 +5,18 @@ import { useSelector } from 'react-redux';
 
 const Column = props => {
 
-  const cards = useSelector(state => state.cards.filter(card => card.columnId === props.id));
+  const { cards, searchPhrase }  = useSelector(state => ({
+    cards: state.cards,
+    searchPhrase: state.searchPhrase.toLowerCase()
+  }));
   
+  const filterCards = cards.filter(card => card.columnId === props.id && card.title.toLowerCase().includes(searchPhrase));
+
   return(
     <article className={styles.column}>
       <span className={styles.icon + ' fa fa-' + props.icon}></span><h2 className={styles.title}>{props.title}</h2>
       <ul className={styles.cards}>
-        {cards.map(card => 
+        {filterCards.map(card => 
           <Card 
           key={card.id} 
           {...card} />)}
