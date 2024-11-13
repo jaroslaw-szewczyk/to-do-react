@@ -1,0 +1,11 @@
+@import '../../styles/settings.scss';
+
+.wrapper {
+  text-align: center;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: $font-size-abaut-header;
+    padding: $base-padding;
+  }
+}
