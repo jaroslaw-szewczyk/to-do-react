@@ -4,10 +4,10 @@ import PageTitle from '../PageTitle/PageTitle';
 
 const Favorite = () => {
   return(
-    <div>
+    <section>
       <PageTitle>favorite</PageTitle>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
+    </section>
   );
 };
 
