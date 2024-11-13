@@ -1,14 +1,12 @@
 import styles from './About.module.scss';
-import Container from '../Container/Container'
+import PageTitle from '../PageTitle/PageTitle';
 
 const About = () => {
   return(
-    <Container>
-      <div className={styles.wrapper}>
-        <h1>about</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </Container>
+    <div>
+      <PageTitle>about</PageTitle>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
   );
 };
 
