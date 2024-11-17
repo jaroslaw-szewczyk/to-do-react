@@ -6,7 +6,7 @@ import { addColumn } from '../../redux/store';
 import Button from '../Button/Button';
 import TextInput from '../TextInput/TextInput';
 
-const ColumnForm = () => {
+const ColumnForm = ({listId}) => {
 
   const dispatch = useDispatch();
 
@@ -15,7 +15,7 @@ const ColumnForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(addColumn({ title, icon }));
+    dispatch(addColumn({ listId, title, icon }));
     setTitle('');
     setIcon('');
   }
