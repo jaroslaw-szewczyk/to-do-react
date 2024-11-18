@@ -32,15 +32,3 @@ const ListForm = (props) => {
 };
 
 export default ListForm;
-
-
-// return (
-//   <form className={styles.listForm} onSubmit={handleSubmit}>
-//     <label>Title:</label> 
-//     <TextInput type="text" value={title} onChange={e => setTitle(e.target.value)}/>
-//     <label>description:</label>
-//     <TextInput type="text" value={icon} onChange={e => setIcon(e.target.value)}/>
-//     <Button>add column</Button>
-//   </form>
-// );
-// };
