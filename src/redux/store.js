@@ -13,6 +13,7 @@ export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });
 export const addCard = payload => ({type: 'ADD_CARD', payload});
 export const updateSearchiString = payload => ({type: 'SEARCH', payload});
 export const addFavorite = payload => ({type:'ADD_FAVORITE', payload});
+export const getFavoriteCards = ({ cards }) => cards.filter(card => card.isFavorite === true);
 
 const reducer = (state, action) => {
   switch(action.type) {

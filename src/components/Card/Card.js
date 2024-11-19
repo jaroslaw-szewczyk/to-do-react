@@ -11,7 +11,7 @@ const Card = props => {
     dispatch(addFavorite({id: props.id}));
   }
 
-  //nalezy zmienieć isFavorite na true lub false;
+  console.log('cards',props.title)
 
   return (
     <li className={styles.card}>{props.title}
