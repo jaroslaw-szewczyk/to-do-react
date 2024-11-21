@@ -2,6 +2,7 @@
 @import '../../styles/settings.scss';
 
 .column {
+  position: relative;
   flex-shrink: 0;
   width: calc(33% - 12px);
   background: $color-light;
@@ -13,6 +14,14 @@
 
   &:last-child {
     margin: 0 0 $base-size 0;
+  }
+
+  .trashIcon {
+    position: absolute;
+    padding-right: $base-size;
+    font-size: ($base-size * 1.5);
+    vertical-align: middle;
+    right: - math.div($base-size, 3);
   }
 }
 
